@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["lib/components/index.ts"],
+      "@templates": ["lib/templates/index.ts"],
+      "@utils": ["lib/utils/index.ts"],
+      "@constants": ["lib/constants/index.ts"],
+      "@types": ["lib/types/index.ts"]
+    },
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
