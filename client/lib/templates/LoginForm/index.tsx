@@ -1,7 +1,7 @@
 import { Button, Input, InputRef } from '@components';
 import { FormEventHandler, useCallback, useRef } from 'react';
 import styled from 'styled-components';
-import { Wrap, Form } from './style';
+import { Wrap, Form, InputBox, ButtonBox } from './style';
 
 const LoginForm = () => {
   const idInputRef = useRef<InputRef>(null);
@@ -19,14 +19,20 @@ const LoginForm = () => {
     if (!pw) {
       alert('패스워드를 입력하세요!');
     }
+
+    alert('로그인');
   }, []);
 
   return (
     <Wrap>
       <Form onSubmit={e => handleSubmit(e)}>
-        <Input ref={idInputRef} placeholder='Enter Id' />
-        <Input ref={pwInputRef} placeholder='Enter Password' />
-        <StyledButton type="submit">로그인</StyledButton>
+        <InputBox>
+          <Input ref={idInputRef} placeholder="Enter Id" />
+          <Input ref={pwInputRef} type="password" placeholder="Enter Password" />
+        </InputBox>
+        <ButtonBox>
+          <StyledButton type="submit">로그인</StyledButton>
+        </ButtonBox>
       </Form>
     </Wrap>
   );

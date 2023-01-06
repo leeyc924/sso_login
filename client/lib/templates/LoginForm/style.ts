@@ -12,4 +12,17 @@ export const Form = styled.form`
   background-color: #fff;
   box-shadow: 0 5px 8px 0 rgb(68 68 68 / 4%);
   margin:  168px auto 0;
+  padding: 20px 28px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const InputBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`
+
+export const ButtonBox = styled.div`
+  margin-top: auto;
 `;
