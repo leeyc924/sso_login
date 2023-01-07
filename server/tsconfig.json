@@ -1,18 +1,29 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "target": "ESNext",
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
-    "module": "ESNext",
+    "baseUrl": "./src",
     "outDir": "./build",
-    "skipDefaultLibCheck": true,
+    "rootDir": "./src",
+    "sourceMap": true,
+    "paths": {
+      "@db": ["database/index.ts"],
+      "@util": ["utils/index.ts"],
+      "@type": ["type/index.ts"],
+      "@route": ["routes/index.ts"],
+    },
+    "target": "ESNext",
+    "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
     "strictNullChecks": true,
+    "noImplicitAny": true,
   },
   "include": [
     "src/**/*"
