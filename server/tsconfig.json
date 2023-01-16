@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "outDir": "./build",
-    "rootDir": "./src",
+    "rootDir": ".",
     "sourceMap": true,
     "paths": {
       "@db": ["database/index.ts"],
@@ -25,9 +25,6 @@
     "strictNullChecks": true,
     "noImplicitAny": true,
   },
-  "include": [
-    "src/**/*"
-  ],
   "exclude": [
     "build",
     "node_modules"
